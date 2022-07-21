@@ -7,6 +7,7 @@
  
  
  #content {
+   margin-top: 5%;
    margin-right: 30%;
    margin-left: 15%;
    padding-left: 10%;
@@ -43,16 +44,4 @@
  font-family: 'Nunito', sans-serif;
  
  
- }
- 
- 
- .wrapper .sidebar{
-     /*background: rgb(5, 68, 104);*/
-     position: fixed;
-     top: 10%;
-     left: 2.5%;
-     width: 225px;
-     height: 100%;
-     padding: 20px 0;
-     transition: all 0.5s ease;
  }
