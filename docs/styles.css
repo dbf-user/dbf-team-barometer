@@ -1,0 +1,227 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+ }
+ 
+ 
+ #content {
+   margin-top: 5%;
+   margin-right: 25%;
+   margin-left: 10%;
+   padding-left: 10%;
+ }
+ 
+ h1 {
+   
+   font-family: 'Poppins', sans-serif;
+ 
+ }
+ 
+ h2 {
+   
+   font-family: 'Poppins', sans-serif;
+ 
+ }
+ 
+ h3 {
+   
+   font-family: 'Poppins', sans-serif;
+ 
+ }
+ 
+ 
+ p {
+ 
+   font-family: 'Nunito', sans-serif;
+ 
+ 
+ }
+ 
+ li {
+ 
+ font-family: 'Nunito', sans-serif;
+ 
+ 
+ }
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #080024;
+  color: #3dc6f2;
+  font-size: 17.5px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #3dc6f2;
+  color: white;
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+/* Слайдер */
+.slider{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 800px;
+}
+
+.slider .item {
+ /* background-color: #3dc6f2; */
+  width: 100%;
+  height: 800px; 
+ 
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item iframe {
+  display:block;
+  width:100%;
+  height: 800px; 
+
+}
+/* Кнопки вперед и назад */
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* transition: 0.6s ease; */
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
